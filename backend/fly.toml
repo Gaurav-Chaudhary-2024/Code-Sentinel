@@ -1,0 +1,21 @@
+# fly.toml — CodeSentinel backend
+# Deploy with: fly launch (first time) or fly deploy (updates)
+
+app = "codesentinel-api"   # change this if the name is taken on Fly.io
+primary_region = "bom"     # Mumbai — closest to India
+
+[build]
+
+[env]
+  PORT = "8080"
+
+[http_service]
+  internal_port       = 8080
+  force_https         = true
+  auto_stop_machines  = false   # keeps it awake forever
+  auto_start_machines = true
+  min_machines_running = 1      # always at least 1 running
+
+[[vm]]
+  size   = "shared-cpu-1x"   # free tier VM
+  memory = "256mb"

@@ -1,0 +1,30 @@
+import os
+import json
+
+password = "admin123"
+db_connection = "mysql://root:password@localhost/mydb"
+
+def get_user(user_id):
+    query = "SELECT * FROM users WHERE id = " + user_id
+    return query
+
+def calculate(a, b, operation):
+    if operation == "add":
+        result = a + b
+    if operation == "subtract":
+        result = a - b
+    if operation == "multiply":
+        result = a * b
+    if operation == "divide":
+        result = a / b
+    return result
+
+def process_data(data):
+    temp = []
+    for i in range(len(data)):
+        temp.append(data[i])
+    return temp
+
+def save_to_file(filename, content):
+    f = open(filename, 'w')
+    f.write(content)
