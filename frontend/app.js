@@ -9,7 +9,7 @@
 const CONFIG = {
   supabaseUrl:  'https://vfvsxnozovksztqzdtzx.supabase.co',        // replace before deploy
   supabaseKey:  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZmdnN4bm96b3Zrc3p0cXpkdHp4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM0NzMxNjYsImV4cCI6MjEwOTA0OTE2Nn0.00VTtlxlsNLBAea98qhzg6wbTlyrnI2W887MKuKibnM',   // replace before deploy
-  backendUrl:   'https://code-sentinel-production.up.railway.app',         // e.g. https://your-api.railway.app
+  backendUrl:   'https://code-sentinel-quxw.onrender.com',         // e.g. https://your-api.railway.app
   themeKey:     'cs-theme',
 };
 
